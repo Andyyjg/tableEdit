@@ -145,7 +145,9 @@
             this.list[(item.columnStart - 1) + (item.rowStart - 1) * this.rows].background=this.deedClone(this.color)
 
 
+
           })
+          this.select=[]
         }
       },
       down(index) {
