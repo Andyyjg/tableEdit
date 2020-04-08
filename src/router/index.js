@@ -8,13 +8,9 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'tableEdit',
-    component: tableEdit
-  },
-  {
-    path: '/douya',
-    name: 'dy',
     component: view
-  }
+  },
+
 ]
 
 const router = new VueRouter({
