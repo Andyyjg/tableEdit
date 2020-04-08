@@ -1,9 +1,11 @@
 <template>
   <div id="app">
+    <router-link to="/">home</router-link> 
+    <router-link to="/douya">dy</router-link> 
     <router-view/>
   </div>
 </template>
-
+ 
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
