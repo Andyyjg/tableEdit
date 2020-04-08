@@ -27,8 +27,8 @@
                 v-show="list[(row - 1) + (column-1) * rows].show"
                 @mousedown="down((row - 1) + (column-1) * rows)"
                 :class="{ select: select.length>1 && list[(row - 1) + (column-1) * rows].select,
-                        noBorderRight:list[(row - 1) + (column-1) * rows].columnStart<rows,
-                        noBorderBottom:list[(row - 1) + (column-1) * rows].rowStart<columns,
+                        noBorderRight:list[(row - 1) + (column-1) * rows].columnEnd-1<rows,
+                        noBorderBottom: list[(row - 1) + (column-1) * rows].rowEnd-1<columns ,
                         singleSelect:select.length==1 && select[0].rowStart==column && select[0].columnStart==row
                         }"
                 :style="{
